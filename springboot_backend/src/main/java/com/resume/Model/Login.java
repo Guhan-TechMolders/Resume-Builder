@@ -18,16 +18,13 @@ private String userName;
 private String userEmail;
 private String password;
 private String Role;
-@Column(unique=true)
-private String phoneNumber;
-public Login(long userId, String userName, String userEmail, String password, String role, String phoneNumber) {
+public Login(long userId, String userName, String userEmail, String password, String role) {
 	super();
 	this.userId = userId;
 	this.userName = userName;
 	this.userEmail = userEmail;
 	this.password = password;
 	Role = role;
-	this.phoneNumber = phoneNumber;
 }
 public Login() {
 	super();
@@ -62,11 +59,4 @@ public String getRole() {
 public void setRole(String role) {
 	Role = role;
 }
-public String getPhoneNumber() {
-	return phoneNumber;
-}
-public void setPhoneNumber(String phoneNumber) {
-	this.phoneNumber = phoneNumber;
-}
-
 }

@@ -36,10 +36,5 @@ public class LoginService implements LoginServiceInterface {
 		return null;
 	}
 
-	@Override
-	public Login getByPhoneNumber(String phoneNumber) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
